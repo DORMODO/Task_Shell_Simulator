@@ -8,8 +8,8 @@
 // Function to display the menu
 void displayMenu() {
     printf("\nShell Simulator Menu:\n");
-    printf("1. Execute DOS command\n");
-    printf("2. View Manual\n");
+    printf("1. Enter DOS command\n");
+    printf("2. Show all supported commands\n");
     printf("3. Exit\n");
     printf("Enter your choice: ");
 }
