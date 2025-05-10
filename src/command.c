@@ -36,13 +36,7 @@ void executeCommand(CommandMap *map, int num_mappings) {
     printf("Enter arguments (if any): ");
     fgets(args, MAX_CMD_LEN, stdin);
     args[strcspn(args, "\n")] = 0;
-
-    // Ensure the concatenated command fits within the buffer
-    if (strlen(map[command_index].linux_cmd) + strlen(args) + 1 >= MAX_CMD_LEN) {
-        printf("Error: Command and arguments are too long to execute.\n");
-        return;
-    }
-
+    
     // Execute the command
     char linux_command[MAX_CMD_LEN];
     snprintf(linux_command, sizeof(linux_command), "%s %s", map[command_index].linux_cmd, args);
