@@ -8,7 +8,6 @@ void displayManual() {
     printf("  dir  -> ls\n");
     printf("  copy -> cp\n");
     printf("  del  -> rm\n");
-    printf("  type -> cat\n")
-    
-    ;
+    printf("  type -> cat\n");
+    printf("  cls  -> clear\n");
 }

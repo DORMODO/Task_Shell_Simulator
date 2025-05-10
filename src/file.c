@@ -14,7 +14,7 @@ int loadCommandMappings(const char *filename, CommandMap **map) {
     int num_mappings = 0;
     char line[MAX_CMD_LEN];
     
-    // Count the number of lines (command mappings) in the file
+    // Count the number of lines in the file
     while (fgets(line, sizeof(line), file)) {
         num_mappings++;
     }
